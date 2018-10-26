@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index')->with('js_key', 'index');
+});
+
+Route::get('/music', function () {
+    return view('music')->with('js_key', 'music');
 });
